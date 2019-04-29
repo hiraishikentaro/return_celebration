@@ -45,6 +45,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="7"
+                    android:inputType="text"
+                    android:hint="イベント名"
                     android:id="@+id/newEventName"
             />
             <ImageView android:layout_width="wrap_content"
@@ -107,10 +109,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/back"
                     android:scaleType="fitCenter"
                     android:background="@null"
-                    android:id="@+id/buttonBack"
             />
             <ImageView
                     android:layout_width="0dp"
