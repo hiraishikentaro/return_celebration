@@ -76,7 +76,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:src="@drawable/button_add"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonAdd"
             />
             <ImageView android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
                     android:layout_weight="1"
                     android:src="@drawable/back"
                     android:scaleType="fitCenter"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonBack"
             />
             <ImageView
@@ -123,7 +123,7 @@
                     android:layout_weight="1"
                     android:src="@drawable/home"
                     android:scaleType="fitCenter"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonHome"
             />
             <ImageView
@@ -137,7 +137,7 @@
                     android:layout_weight="1"
                     android:src="@drawable/list"
                     android:scaleType="fitCenter"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonList"
             />
 

@@ -23,14 +23,17 @@
                 android:textSize="30sp"
                 android:gravity="center"
         />
-
-        <ListView
+        <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="30"
-        >
+                android:layout_weight="30">
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            </ListView>
+        </ScrollView>
 
-        </ListView>
+
         <LinearLayout
                 android:layout_weight="2"
                 android:layout_width="match_parent"
@@ -48,7 +51,7 @@
                     android:layout_weight="1"
                     android:src="@drawable/back"
                     android:scaleType="fitCenter"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonBack"
             />
             <ImageView
@@ -62,7 +65,7 @@
                     android:layout_weight="1"
                     android:src="@drawable/home"
                     android:scaleType="fitCenter"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonHome"
             />
             <ImageView
@@ -76,7 +79,7 @@
                     android:layout_weight="1"
                     android:src="@drawable/list"
                     android:scaleType="fitCenter"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonList"
             />
 

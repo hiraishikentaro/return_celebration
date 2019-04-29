@@ -59,7 +59,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonRegist"
                     android:src="@drawable/button_regist"
             />
@@ -94,7 +94,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonManage"
                     android:src="@drawable/button_manage"
             />
@@ -131,7 +131,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
-                    android:background="null"
+                    android:background="@null"
                     android:id="@+id/buttonSet"
                     android:src="@drawable/button_set"
             />
