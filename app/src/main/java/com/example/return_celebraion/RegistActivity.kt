@@ -11,9 +11,12 @@ import android.widget.Toast
 
 
 class RegistActivity : AppCompatActivity(){
+    lateinit private var userDB : userDBAdapter
     override fun onCreate(savedInstanceState: Bundle?){
+        userDB = userDBAdapter(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_regist)
+
 
         buttonAdd.setOnClickListener {
             val eventname = getEventName()
@@ -21,6 +24,7 @@ class RegistActivity : AppCompatActivity(){
                 toastMake("イベント名を入力してください",0,-200)
             }
             else {
+                userDB.addRecord(eventname, "1","1",1,"1",0)
                 val intent = Intent(this, ListActivity::class.java)
                 startActivity(intent)
             }
