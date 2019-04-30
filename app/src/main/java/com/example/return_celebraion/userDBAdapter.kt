@@ -16,18 +16,18 @@ class userDBAdapter(mContext: Context){
 
     fun addRecord(event_name : String, to_name : String, received : String, day :Int, present : String, check : Int ){
         val values = ContentValues()
-        values.put("event_name", event_name)
-        values.put("to_name", to_name)
+        values.put("eventname", event_name)
+        values.put("toname", to_name)
         values.put("received", received)
         values.put("date",day)
-        values.put("present", present)
-        values.put("check", check)
+        values.put("forpresent", present)
+        values.put("donecheck", check)
 
-        db.insertOrThrow(DB_TABLE_NAME, null, values)
+        db.insertOrThrow("event", null, values)
     }
 
     fun getEventList(): String{
-        val selectQql : String = "select distinct event_name from " + DB_TABLE_NAME
+        val selectQql : String = "select distinct eventname from " + "event"
         val cursor : Cursor = db.rawQuery(selectQql, arrayOf())
 
         var Result : String = ""

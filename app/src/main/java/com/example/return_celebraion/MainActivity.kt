@@ -6,8 +6,10 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    lateinit private var userDB : userDBAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        userDB = userDBAdapter(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
