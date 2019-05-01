@@ -24,7 +24,7 @@ class RegistActivity : AppCompatActivity(){
                 toastMake("イベント名を入力してください",0,-200)
             }
             else {
-                userDB.addRecord(eventname, "1","1",1,"1",0)
+                userDB.addRecord(eventname, "1","1","1","1",0)
                 val intent = Intent(this, ListActivity::class.java)
                 startActivity(intent)
             }

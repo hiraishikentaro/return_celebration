@@ -14,7 +14,7 @@ class userDBAdapter(mContext: Context){
         db = userDB.writableDatabase
     }
 
-    fun addRecord(event_name : String, to_name : String, received : String, day :Int, present : String, check : Int ){
+    fun addRecord(event_name : String, to_name : String, received : String, day :String, present : String, check : Int ){
         val values = ContentValues()
         values.put("eventname", event_name)
         values.put("toname", to_name)
