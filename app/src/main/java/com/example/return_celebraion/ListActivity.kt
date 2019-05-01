@@ -1,5 +1,6 @@
 package com.example.return_celebraion
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
@@ -23,7 +24,11 @@ class ListActivity : AppCompatActivity() {
         }
         list.setOnItemClickListener { adapterView, view, i, l ->
             val textView = view.findViewById<TextView>(R.id.rowEventName)
-            Toast.makeText(this,"Clicked: ${textView.text}", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,"Clicked: ${textView.text}", Toast.LENGTH_SHORT).show()
+            val to_event_name = textView.text.toString()
+            val intent = Intent(this, Detail_Activity::class.java)
+            intent.putExtra("EVENT_NAME_KEY", to_event_name)
+            startActivity(intent)
 
         }
 
