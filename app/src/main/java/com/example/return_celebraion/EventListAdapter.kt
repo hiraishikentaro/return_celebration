@@ -26,6 +26,7 @@ class EventListAdapter : ArrayAdapter<EventListData> {
         }
         return newView
 
+
     }
 
 }
