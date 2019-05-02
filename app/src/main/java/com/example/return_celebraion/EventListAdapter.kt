@@ -25,8 +25,6 @@ class EventListAdapter : ArrayAdapter<EventListData> {
             newView.findViewById<TextView>(R.id.rowEventName).text = event_name
         }
         return newView
-
-
     }
 
 }

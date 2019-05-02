@@ -61,6 +61,8 @@
                     android:layout_weight="3"
                     android:background="@null"
                     android:id="@+id/buttonRegist"
+                    android:scaleType="fitCenter"
+
                     android:src="@drawable/button_regist"
             />
             <ImageView android:layout_width="wrap_content"
@@ -96,6 +98,7 @@
                     android:layout_weight="3"
                     android:background="@null"
                     android:id="@+id/buttonManage"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/button_manage"
             />
             <ImageView android:layout_width="wrap_content"
@@ -132,6 +135,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:background="@null"
+                    android:scaleType="fitCenter"
                     android:id="@+id/buttonSet"
                     android:src="@drawable/button_set"
             />

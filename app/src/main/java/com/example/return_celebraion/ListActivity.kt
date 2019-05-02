@@ -9,7 +9,6 @@ import kotlinx.android.synthetic.main.activity_list.*
 import org.jetbrains.anko.db.select
 
 class ListActivity : AppCompatActivity() {
-    lateinit private var userDB : userDBAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -17,11 +16,12 @@ class ListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_list)
 
         val helper = userDBHelper.getInstance(this)
-        val dataList = helper.readableDatabase.select(userDBHelper.tableName).distinct().parseList(EventListDataParser())
+        val dataList = helper.readableDatabase.select(userDBHelper.tableName,"eventname").distinct().parseList(EventListDataParser())
 
         list.adapter = EventListAdapter(baseContext, R.layout.row).apply {
             addAll(dataList)
         }
+
         list.setOnItemClickListener { adapterView, view, i, l ->
             val textView = view.findViewById<TextView>(R.id.rowEventName)
             //Toast.makeText(this,"Clicked: ${textView.text}", Toast.LENGTH_SHORT).show()
@@ -29,7 +29,11 @@ class ListActivity : AppCompatActivity() {
             val intent = Intent(this, Detail_Activity::class.java)
             intent.putExtra("EVENT_NAME_KEY", to_event_name)
             startActivity(intent)
+        }
 
+        buttonHome.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
     }

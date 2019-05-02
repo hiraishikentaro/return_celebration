@@ -78,6 +78,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:src="@drawable/button_add"
+                    android:scaleType="fitCenter"
                     android:background="@null"
                     android:id="@+id/buttonAdd"
             />

@@ -60,6 +60,7 @@
                     android:hint="名前"
                     android:gravity="center"
                     android:id="@+id/toName"
+                    android:inputType="text"
             />
             <ImageView
                     android:layout_width="0dp"
@@ -92,6 +93,7 @@
                     android:textSize="20sp"
                     android:gravity="center"
                     android:text="お祝い"
+                    android:inputType="text"
             />
             <ImageView
                     android:layout_width="0dp"
@@ -150,6 +152,7 @@
                     android:layout_weight="8"
                     android:hint="お返し用のプレゼント"
                     android:gravity="center"
+                    android:inputType="text"
                     android:id="@+id/forYou"
             />
             <ImageView
@@ -191,10 +194,38 @@
             />
 
         </LinearLayout>
+
+        <ImageView
+                android:layout_weight="1.9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+        <LinearLayout
+                android:layout_weight="1.8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            <ImageView
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/back"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/buttonBack"
+            />
+            <ImageView
+                    android:layout_weight="4.8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4"/>
+                android:layout_weight="2"/>
 
     </LinearLayout>
 

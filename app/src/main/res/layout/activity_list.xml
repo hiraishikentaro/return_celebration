@@ -44,14 +44,12 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
             />
-            <ImageButton
+            <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/back"
                     android:scaleType="fitCenter"
                     android:background="@null"
-                    android:id="@+id/buttonBack"
             />
             <ImageView
                     android:layout_width="0dp"
@@ -72,14 +70,12 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
             />
-            <ImageButton
+            <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/list"
                     android:scaleType="fitCenter"
                     android:background="@null"
-                    android:id="@+id/buttonList"
             />
 
             <ImageView
