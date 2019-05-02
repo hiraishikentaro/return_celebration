@@ -55,6 +55,11 @@ class AddActivity :AppCompatActivity(){
                 startActivity(intent)
             }
         }
+        buttonBack.setOnClickListener {
+            val intent = Intent(this, Detail_Activity::class.java)
+            intent.putExtra("EVENT_NAME_KEY",to_event_name)
+            startActivity(intent)
+        }
     }
 
 

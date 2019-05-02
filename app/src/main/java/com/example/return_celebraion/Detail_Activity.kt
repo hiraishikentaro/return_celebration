@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_detail.*
 import org.jetbrains.anko.db.select
-import org.jetbrains.anko.tableRow
 
 class Detail_Activity :AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +25,25 @@ class Detail_Activity :AppCompatActivity() {
 
         detailList.adapter = DetailEventAdapter(baseContext, R.layout.table).apply {
             addAll(dataList)
+        }
+
+        detailList.setOnItemClickListener{ adapterView, view, i, l ->
+
+            val text_toname = view.findViewById<TextView>(R.id.rowForName)
+            val toname = text_toname.text.toString()
+
+            val toreceived = view.findViewById<TextView>(R.id.rowForGive).text.toString()
+
+            val forpresent = view.findViewById<TextView>(R.id.rowForPresent).text.toString()
+
+
+
+            val intent = Intent(this, EditActivity::class.java)
+            intent.putExtra("EVENT_NAME_KEY", to_event_name)
+            intent.putExtra("TO_NAME_KEY", toname)
+            intent.putExtra("TO_REC", toreceived)
+            intent.putExtra("FOR_PRESENT",forpresent)
+            startActivity(intent)
         }
 
 

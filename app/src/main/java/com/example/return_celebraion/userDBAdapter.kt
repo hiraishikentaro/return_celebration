@@ -26,6 +26,10 @@ class userDBAdapter(mContext: Context){
         db.insertOrThrow("event", null, values)
     }
 
+    fun update(event_name : String, to_name : String, received : String, day :String, present : String, check : String ){
+
+    }
+
     fun getEventList(): String{
         val selectQql : String = "select distinct eventname from " + "event"
         val cursor : Cursor = db.rawQuery(selectQql, arrayOf())

@@ -9,7 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,24 +18,37 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ListActivity">
-            <intent-filter>
+        <activity android:name=".ListActivity"
+                  android:screenOrientation="portrait">
+
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".RegistActivity">
-            <intent-filter>
+        <activity android:name=".RegistActivity"
+                  android:screenOrientation="portrait">
+
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Detail_Activity">
-            <intent-filter>
+        <activity android:name=".Detail_Activity"
+                  android:screenOrientation="portrait">
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
-        <activity android:name=".AddActivity">
-            <intent-filter>
+        <activity android:name=".AddActivity"
+                  android:screenOrientation="portrait">
+
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditActivity"
+                  android:screenOrientation="portrait">
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
