@@ -1,4 +1,4 @@
-package com.example.return_celebraion
+package jp.co.return_celebraion
 
 import android.content.ContentValues
 import android.content.Context
